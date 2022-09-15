@@ -3,13 +3,19 @@
 [Link to Deployed Application](https://505laura.github.io/work-day-scheduler)
 
 ## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
+This webpage is designed to work as a schedule and/or calendar for a standard (9am-5pm) workday. It provides users with the ability to enter their events or tasks in separate time blocks according to the time of day and save them so that they will remain in the schedule even once you leave or refresh the page. 
+The color of each timeblock will change according to the time of day the page is accessed:
+* For hours that have passed, the timeblock will be colored grey.
+* For the current hour, the timeblock will be colored red.
+* For upcoming hours, the timeblock will be colored green.
 
 ## Visuals
-<!-- ![Webpage](https://github.com/505laura/password-generator/blob/81d2386eaed55c8ea6b130d41f48b0563911f521/assets/images/password-generator.png?raw=true) -->
+![Webpage](https://github.com/505laura/work-day-scheduler/blob/main/assets/images/work-day-scheduler.png?raw=true)
 
 ## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
+### Adding an event or task to the schedule
+Click on the grey, red or green colored areas of each timeblock to add your own text.
 
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
+### Saving an event or task to the schedule
+Click on the blue section on the right of the webpage to save your text to the page. 
+If you would like to clear text, simply delete it and click the blue save section again.
