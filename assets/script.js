@@ -1,4 +1,4 @@
-let events = [];
+let events = JSON.parse(localStorage.getItem(moment().format('dddd, MMMM Do')) || '[]');
 
 const today = moment();
 $('#currentDay').text (today.format('dddd, MMMM Do YYYY'));
@@ -6,7 +6,7 @@ $('#currentDay').text (today.format('dddd, MMMM Do YYYY'));
 for (let hour = 9; hour < 18; hour++) {
     $('.container').append(`<div class="row">
     <div class="hour col-2 text-center p-3">${workDayHour(hour)}</div>
-    <div class="description col-8 ${pastPresentFuture(hour)} p-0"><textarea class="col-12 h-100"></textarea></div>
+    <div class="description col-8 ${pastPresentFuture(hour)} p-0"><textarea class="col-12 h-100">${events[hour] || ''}</textarea></div>
     <button data-hour="${hour}" class="saveBtn col-2"><i class="fas fa-save"></i></button>
     </div>`);
 }
